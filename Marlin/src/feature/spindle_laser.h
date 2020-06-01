@@ -47,7 +47,7 @@ class SpindleLaser {
 public:
   static cutter_power_t power;
   static inline uint8_t powerPercent(const uint8_t pp) { return ui8_to_percent(pp); } // for display
-  static inline uint16_t powerPercent(const uint16_t pp) { return (int(pp)*100/SPEED_POWER_MAX); } // for display
+  static inline uint16_t powerPercent(const uint16_t pp) { return (int(pp)*100/SPEED_POWER_MAX); } // for display for max speeds above 255
 
   static void init();
 
